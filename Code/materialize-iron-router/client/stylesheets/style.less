@@ -1,6 +1,56 @@
 // Footer
 @footer-height: 70px;
 
+
+
+.side-nav {
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #ffff99;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: left; }
+  .side-nav.right-aligned {
+    will-change: right;
+    right: -105%;
+    left: auto; }
+  .side-nav .collapsible {
+    margin: 0; }
+  .side-nav li {
+    float: none;
+    padding: 0 15px; }
+    .side-nav li:hover, .side-nav li.active {
+      background-color: #ddd; }
+  .side-nav a {
+    color: #444;
+    display: block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 15px; }
+
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #505050;
+}
+
+nav {
+   color: #fff;
+  background-color: #505050;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -62,3 +112,24 @@ header, main, footer {
   .container {
     width: 98%; }
  }
+
+
+// sign in button static style
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.side-nav li {
+    color:  #EB9100 ;
+}
+    

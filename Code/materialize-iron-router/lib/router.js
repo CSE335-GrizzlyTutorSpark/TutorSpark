@@ -2,11 +2,16 @@ Router.configure({
     layoutTemplate: 'masterLayout',
     loadingTemplate: 'loading',
     notFoundTemplate: 'pageNotFound',
+//    schedule:'schedule',
     yieldTemplates: {
         nav: {to: 'nav'},
         footer: {to: 'footer'},
-    }
+    } 
 });
+
+
+Router.route('/schedule');
+Router.route('/selectcourse.html');
 
 Router.map(function() {
     this.route('home', {
@@ -24,8 +29,11 @@ Router.plugin('ensureSignedIn', {
 //UserAccounts Routes
 AccountsTemplates.configureRoute('changePwd');
 AccountsTemplates.configureRoute('enrollAccount');
-AccountsTemplates.configureRoute('forgotPwd');
+// AccountsTemplates.configureRoute('forgotPwd');
 AccountsTemplates.configureRoute('resetPwd');
 AccountsTemplates.configureRoute('signIn');
 AccountsTemplates.configureRoute('signUp');
 AccountsTemplates.configureRoute('verifyEmail');
+
+/*
+AccountsTemplates.configureRoute('schedule'); */

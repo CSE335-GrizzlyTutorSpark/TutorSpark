@@ -1,7 +1,7 @@
 // Options
 AccountsTemplates.configure({
     //defaultLayout: 'emptyLayout',
-    showForgotPasswordLink: true,
+    //showForgotPasswordLink: true,
     overrideLoginErrors: true,
     enablePasswordChange: true,
     sendVerificationEmail: false,
