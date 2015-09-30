@@ -29,6 +29,8 @@ Meteor.startup(function() {
   */
 
   // Add Google configuration entry
+  
+    /* remove following code for now 
   ServiceConfiguration.configurations.update(
     { service: "google" },
     { $set: {
@@ -39,7 +41,17 @@ Meteor.startup(function() {
     },
     { upsert: true }
   );
-
+  
+  */
+    Accounts.loginServiceConfiguration.remove({
+        service:"google"
+    });
+    
+    Accounts.loginServiceConfiguration.insert({
+       service: "google",
+        clientId: "428763116461-qok1lheo2g7p9c5h90eguk5t1b73d25p.apps.googleusercontent.com",
+        secret:"i17Nhc0BCTnu3WGGx0Z3o7qR"
+    });
   // Add Linkedin configuration entry
   /*
   ServiceConfiguration.configurations.update(
