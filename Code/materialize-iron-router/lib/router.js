@@ -12,6 +12,7 @@ Router.configure({
 
 Router.route('/schedule');
 Router.route('/selectcourse');
+Router.route('/results');
 
 Router.map(function() {
     this.route('home', {
