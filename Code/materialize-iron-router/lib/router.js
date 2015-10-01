@@ -23,7 +23,7 @@ Router.map(function() {
 });
 
 Router.plugin('ensureSignedIn', {
-  only: ['private']
+  only: ['private']['schedule']
 });
 
 

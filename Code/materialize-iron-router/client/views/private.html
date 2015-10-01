@@ -1,3 +1,32 @@
 <template name="private">
   <h1 class="center">My tutoring</h1>
+    <div class="section">
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#test1">Scheduled Appointment</a></li>
+                    <li class="tab col s4"><a class="active" href="#test2">Information</a></li>
+                    <li class="tab col s4"><a href="#test3">Placeholder</a></li>
+                    
+                </ul>
+            </div>
+            <div id="test1" class="col s12">Your Next Tutor Appointment</div>
+            <div id="test2" class="col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div>
+            <div id="test3" class="col s12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div>
+    
+        </div>
+    
+    </div>
+    <div class="section">
+    <button class="btn waves-effect waves-light" type="submit" id="findtutor" name="action">
+        Find a Tutor
+<!---  materialize icon     <i class="material-icons right">send</i> -->
+    </button>
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+    </script>
 </template>
