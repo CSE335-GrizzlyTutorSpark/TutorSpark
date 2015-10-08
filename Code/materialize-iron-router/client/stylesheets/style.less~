@@ -1,5 +1,5 @@
 // Footer
-@footer-height: 75px;
+@footer-height: 70px;
 
 
 
@@ -16,11 +16,9 @@
   background-color: #000;
   z-index: 999;
   overflow-y: auto;
-  will-change: left; 
-    text-align: center;
-}
+  will-change: left; }
   .side-nav.left-aligned {
-    will-change:left;
+    will-change: right;
     right: -105%;
     left: auto; }
   .side-nav .collapsible {
@@ -31,15 +29,12 @@
     .side-nav li:hover, .side-nav li.active {
       background-color: #b59a57; }
   .side-nav a {
-    color: #555;
-    display:inline-block;
+    color: #000;
+    display: block;
     font-size: 1rem;
     height: 64px;
     line-height: 64px;
-    padding: 0 15px;
-  text-align:center;
-  vertical-align:center;
-  }
+    padding: 0 15px; }
 
 
 footer.page-footer {
@@ -49,17 +44,11 @@ footer.page-footer {
 }
 
 nav {
-color: #555;
-background-color: #000;
-width: 100%;
-height: 90px;
-line-height: 90px;  
-text-align:center; 
-width: 100%; 
-position:relative;
-margin:0px;
-padding:0px;
-    
+   color: #555;
+  background-color: #000;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
 }
 
 html {
@@ -76,7 +65,6 @@ body {
   padding: 0px;
   color: #b59a57;
   min-width: 320px;
-
 }
 
 // left margin for main content when side nav is open
@@ -86,15 +74,15 @@ body {
   }
 }
 
+img { 
+size:85px; 
+}
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: @footer-height;
-color:#b59a57;
-text-align: center;
-    font-size:18px;
   > .content {
     padding-right: 15px;
     padding-left: 15px;
@@ -103,7 +91,7 @@ text-align: center;
 
 
 header, main, footer {
-  padding-left: 100px;
+  padding-left: 240px;
 }
 
 @media only screen and (max-width : 992px) {
@@ -113,7 +101,9 @@ header, main, footer {
 }
 
 .container {
-max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1280px;
   width: 100%; }
 
 @media only screen and (min-width : 601px) {
@@ -144,58 +134,4 @@ max-width: 1280px;
 
 .side-nav li {
     color:  #000;
-}
-
-nav .nav-wrapper{ 
-position: relative; 
-
-} 
-
-
-nav .button-collapse{
-float:left;
-    position:relative;
-    z-index: 1;
-    height: 65px;
-    color: #b59a57;
-}
-
-nav a{
-text-align:center;
-vertical-align: middle;
-color:#b59a57; 
-text-decoration-style: double; 
-font-size:28px;
-} 
-
-img{
-size:85px;
-height:85px;
-vertical-align:middle;
-align-self:center; 
-} 
-
-
-[class*="mdi-"] {
-    display:inline-block;
-    font-family: "Material-Design-Icons";
-    transform: translate(175px, -75px);
-    font-size: 40px;
-    color:#b59a57;
-    text-rendering:auto;
-    vertical-align: middle;
-    white-space: nowrap;
-} 
-
-header{
-background-color: #000;
-position:relative; 
-height: 100px;
-} 
-
-.center { 
-text-align:center; 
-font-size:18px;
-text-decoration-style: wavy;
-font-family:serif;
 }

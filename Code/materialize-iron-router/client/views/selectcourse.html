@@ -1,4 +1,26 @@
+<template name="selectcourse">
+     <h1 class="center">Select the Course Subject</h1>
+    <ul>
+    <li>Computer Information Technology</li>
+    <li>Computer Science and Engineering</li>
+    <!-- Place holder for retriving subject through database
+    
+    {{#each subject}}
+    {{name}}  
+    {{/each}}
 
+    -->  
+    </ul>
+    <a href="{{pathFor 'private'}}" class="waves-effect waves-teal btn-flat">Back</a>
+    <button class="btn waves-effect waves-light" type="submit" id="subjectsubmit" name="action">
+        Next
+<!---  materialize icon     <i class="material-icons right">send</i> -->
+    </button>
+    
+</template>
+
+
+<!--
 <template name="selectcourse">
     <h1 class="center">Select Course within the Subject</h1>
     <ul> 
@@ -6,7 +28,9 @@
     <li>CIT400</li>
     </ul>
     <a href="{{pathFor 'schedule'}}" class="waves-effect waves-teal btn-flat">Back</a>
-    <button class="btn waves-effect waves-light" type="submit" id="coursesubmit" name="action">
+    <button class="btn waves-effect waves-light" type="submit" id="subjectsubmit" name="action">
     Next
     </button>
 </template> 
+
+-->

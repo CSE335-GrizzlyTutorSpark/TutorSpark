@@ -37,8 +37,8 @@ Meteor.startup(function() {
         secret: "XXXXXXXXXXXXXXXXXXXXXXXX"
       }
     },
-    { upsert: true }
-  );
+    { upsert: true } 
+      );
 
   // Add Linkedin configuration entry
   /*

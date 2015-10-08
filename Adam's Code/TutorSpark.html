@@ -1,0 +1,33 @@
+<head>
+  <title>TutorSpark</title>
+</head>
+
+<body>
+  <div class="container">
+	<header>
+		<h1>Document Function: User Entry / Deletion</h1>
+		<label class="hide-checked">
+			<input type="checkbox" checked="{{hideChecked}}">
+            Persistent Checks (hide)
+		</label>
+		<form class="new-record">
+			<input type="text" name="recordField" placeholder="New Entry">
+			<input type="submit" value="Submit">
+		</form>
+	</header>
+	<ul>
+		{{#each records}}
+			{{> record}}
+		{{/each}}
+	</ul>
+      {{> loginButtons}}
+  </div>
+</body>
+
+<template name="record">
+  <li class="{{#if checked}}checked{{/if}}">
+	<input type="checkbox" checked="{{checked}}" class="toggle-checked">
+	<span class="text">{{recordField}}</span>
+	<button class="delete">Remove</button>
+  </li>
+</template>
