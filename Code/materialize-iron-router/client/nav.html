@@ -15,19 +15,33 @@
 <ul id="nav-mobile" class="right side-nav fixed" style="width:240px"> 
        <img src="imgs/ou-logo.jpg" alt="ou">
           <li><a href="{{pathFor 'home'}}">Home</a></li>
-    <!--      <li><a href="{{pathFor 'policy'}}">Policy</a></li>  -->
-    <!--      <li><a href="{{pathFor 'about us'}}">About Us</a></li> -->
-          <li><a href="{{pathFor 'Schedule'}}">Schedule</a></li>
-        
+    
+    {{#if isInRole 'admin'}}
+    <li><a href="{{pathFor 'AddTutor'}}">Add Tutor</a></li> 
+    <li><a href="{{pathFor 'AdminSchedule'}}">Modified Existing Schedule</a></li>
+    {{/if}}
+    
+    
+    {{#if isInRole 'student'}}
+    <li><a href="{{pathFor 'StudentSchedule'}}">My Schedule</a></li>
+    <li><a href="{{pathFor 'FindTutor'}}">Find A Tutor </a></li>
+    
+    
+    <li><a href="{{pathFor 'Schedule'}}">Check All Schedule</a></li>
+    {{/if}}
          <li>{{> atNavButton }}</li>
             {{#if currentUser}}
      <!--- leave out for now {{userinfo}} -->
             <li>Welcome, Name</li>
-            <li>Major: SomeMajor</li>
             
+            {{#if isInRole 'student'}}
+            
+                <li>Major: SomeMajor</li>
             {{/if}}
-            
-        </ul>
+    
+    {{/if}}
+    </ul>
+        
         
 
               
