@@ -59,9 +59,9 @@ if (Meteor.users.find().fetch().length === 0) {
     console.log('Creating users: ');
 
     var users = [
-        {name:"Normal User",email:"normal@example.com",roles:[]},
-        {name:"View-Secrets User",email:"view@example.com",roles:['view-secrets']},
-        {name:"Manage-Users User",email:"manage@example.com",roles:['manage-users']},
+        {name:"Normal User",email:"normal@example.com",roles:['student']},
+        {name:"View-Secrets User",email:"view@example.com",roles:['student,tutor']},
+        {name:"Manage-Users User",email:"manage@example.com",roles:['admin']},
         {name:"Admin User",email:"admin@example.com",roles:['admin']}
       ];
 
