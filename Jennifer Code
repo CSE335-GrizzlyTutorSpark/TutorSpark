@@ -1,0 +1,201 @@
+// Footer
+@footer-height: 75px;
+
+
+
+.side-nav {
+  position: fixed;
+  width: 240px;
+  left: -105%;
+  top: 0;
+  margin: 0;
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #000;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: left; 
+    text-align: center;
+}
+  .side-nav.left-aligned {
+    will-change:left;
+    right: -105%;
+    left: auto; }
+  .side-nav .collapsible {
+    margin: 0; }
+  .side-nav li {
+    float: none;
+    padding: 0 15px; }
+    .side-nav li:hover, .side-nav li.active {
+      background-color: #b59a57; }
+  .side-nav a {
+    color: #555;
+    display:inline-block;
+    font-size: 1rem;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 15px;
+  text-align:center;
+  vertical-align:center;
+  }
+
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #000;
+}
+
+nav {
+color: #555;
+background-color: #000;
+width: 100%;
+height: 90px;
+line-height: 90px;  
+text-align:center; 
+width: 100%; 
+position:relative;
+margin:0px;
+padding:0px;
+    
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+  background: #FCFCFC url(/imgs/bg.jpg) repeat;
+  margin: 0px;
+  /* Margin bottom by footer height */
+  margin-bottom: @footer-height;
+  padding: 0px;
+  color: #b59a57;
+  min-width: 320px;
+
+}
+
+// left margin for main content when side nav is open
+@media only screen and (min-width: 993px) {
+  #content {
+    margin-left: 240px;
+  }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: @footer-height;
+color:#b59a57;
+text-align: center;
+    font-size:18px;
+  > .content {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+header, main, footer {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.container {
+max-width: 1280px;
+  width: 100%; }
+
+@media only screen and (min-width : 601px) {
+  .container {
+    width: 99%; }
+ }
+
+@media only screen and (min-width : 993px) {
+  .container {
+    width: 98%; }
+ }
+
+
+// sign in button static style
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #b59a57;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.side-nav li {
+    color:  #000;
+}
+
+nav .nav-wrapper{ 
+position: relative; 
+
+} 
+
+
+nav .button-collapse{
+float:left;
+    position:relative;
+    z-index: 1;
+    height: 65px;
+    color: #b59a57;
+}
+
+nav a{
+text-align:center;
+vertical-align: middle;
+color:#b59a57; 
+text-decoration-style: double; 
+font-size:28px;
+} 
+
+img{
+size:85px;
+height:85px;
+vertical-align:middle;
+align-self:center; 
+} 
+
+
+[class*="mdi-"] {
+    display:inline-block;
+    font-family: "Material-Design-Icons";
+    transform: translate(175px, -75px);
+    font-size: 40px;
+    color:#b59a57;
+    text-rendering:auto;
+    vertical-align: middle;
+    white-space: nowrap;
+} 
+
+header{
+background-color: #000;
+position:relative; 
+height: 100px;
+} 
+
+.center { 
+text-align:center; 
+font-size:18px;
+text-decoration-style: wavy;
+font-family:serif;
+}
