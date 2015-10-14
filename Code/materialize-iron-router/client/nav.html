@@ -24,8 +24,10 @@
     
     {{#if isInRole 'student'}}
     <li><a href="{{pathFor 'StudentPrivate'}}">My Schedule</a></li>
-    <li><a href="{{pathFor 'FindTutor'}}">Find A Tutor </a></li>
     
+    <!--- hide for now
+    <li><a href="{{pathFor 'FindTutor'}}">Find A Tutor </a></li>
+    -->
     
     <li><a href="{{pathFor 'StudentSchedule'}}">Check All Schedule</a></li>
     {{/if}}
