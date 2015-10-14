@@ -19,6 +19,8 @@ Router.route('/AdminSchedule');
 Router.route('/AddTutor');
 Router.route('/AdminPrivate');
 Router.route('/StudentSchedule');
+Router.route('/AddTutorCourse');
+Router.route('/AddTutorHour');
 
 Router.map(function() {
     this.route('home', {

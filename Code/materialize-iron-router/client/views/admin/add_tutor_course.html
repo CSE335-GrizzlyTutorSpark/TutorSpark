@@ -1,0 +1,70 @@
+<template name="AddTutorCourse">
+    <h1 class="center">Select the course for tutor: name</h1>
+    
+    <div>
+    <!--- List with checkbox design -->
+    <!--- make a csss class for the following item in the long run 
+        Make sure they have enough space from each other to prevent any misclick-trigger events-->
+    <div style="float:left;">
+      <form action="#">
+    <p>
+      <input type="checkbox" id="test5" />
+      <label for="test5">Class 1</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test6" />
+      <label for="test6">Class 2</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Class 3</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+      <label for="test7">Class 4</label>
+    </p>
+      <p>
+        <input type="checkbox" id="test8" disabled="disabled" />
+        <label for="test8">Class 5</label>
+    </p>
+  </form>
+    </div>
+    
+    <div style="float:left;">
+        <form action="#">
+    <p>
+      <input type="checkbox" id="test10" />
+      <label for="test10">Class 1</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test12"  />
+      <label for="test12">Class 2</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Class 3</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test13" checked="checked" disabled="disabled" />
+      <label for="test13">Class 4</label>
+    </p>
+      <p>
+        <input type="checkbox" id="test14" disabled="disabled" />
+        <label for="test14">Class 5</label>
+    </p>
+  </form>
+        
+    </div>
+    <div style="clear:both;">
+    <a href="{{pathFor 'AddTutor'}}" class="waves-effect waves-teal btn-flat">Back</a>
+    <button href="{{pathFor 'AddTutorHour'}}" class="btn waves-effect waves-light" type="submit" id="addtutorcourse" name="action">Next</button>
+    
+        
+         <!--   navi link for develop     
+        <a href="{{pathFor 'AddTutorHour'}}" class="waves-effect waves-teal btn-flat">Temp Navi Button</a>
+-->
+
+</div>
+    
+    </div>
+</template>
