@@ -1,20 +1,20 @@
-<template name="student_schedule">
-     <h1 class="center">Select the Course Subject</h1>
-    <ul>
-    <li>Computer Information Technology</li>
-    <li>Computer Science and Engineering</li>
-    <!-- Place holder for retriving subject through database
+<template name="StudentSchedule">
+     <h1 class="center">Student Schedule Remove this title</h1>
+  
+    {{> ReactiveFullcalendar options=calendarOptions }}
     
-    {{#each subject}}
-    {{name}}  
-    {{/each}}
+    
+    
+    <!--- 
+        Navigation not needed here  
+    
+<a href="{{pathFor 'private'}}" class="waves-effect waves-teal btn-flat">Back</a>
 
-    -->  
-    </ul>
-    <a href="{{pathFor 'private'}}" class="waves-effect waves-teal btn-flat">Back</a>
-    <button class="btn waves-effect waves-light" type="submit" id="subjectsubmit" name="action">
-        Next
-<!---  materialize icon     <i class="material-icons right">send</i> -->
+<button class="btn waves-effect waves-light" type="submit" id="subjectsubmit" name="action">
+
+Next  
+ materialize icon    
+
     </button>
-    
+-->    
 </template>

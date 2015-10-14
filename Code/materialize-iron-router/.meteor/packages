@@ -19,3 +19,9 @@ zimme:active-route
 useraccounts:iron-routing
 aldeed:template-extension
 alanning:roles
+aldeed:tabular
+rzymek:fullcalendar
+fermuch:meteor-reactive-fullcalendar
+mrt:jquery-ui
+mizzao:jquery-ui
+gquemart:meteor-reactive-fullcalendar

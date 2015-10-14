@@ -1,0 +1,26 @@
+<template name="AddTutor">
+  <h1 class="center">Add a New Tutor</h1>
+    
+    {{>TutorInputForm}}
+
+</template>
+
+
+
+<template name="TutorInputForm">
+    <form>
+    <ul>
+    <li>
+    <label>Tutor Name</label>
+    <input type="text" name="tutorname">
+    <label>Email</label>
+    <input type="text" name="tutoremail">
+    </li>
+    
+    <li>
+    <input type="submit" value="Next">
+    </li>
+    </ul>
+        
+    </form>
+</template>

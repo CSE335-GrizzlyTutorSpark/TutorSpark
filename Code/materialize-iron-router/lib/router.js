@@ -15,23 +15,30 @@ Router.route('/policy');
 Router.route('/aboutus');
 Router.route('/signin');
 Router.route('/StudentPrivate');
-//Router.route('/AdminPrivate');
+Router.route('/AdminSchedule');
+Router.route('/AddTutor');
+Router.route('/AdminPrivate');
+Router.route('/StudentSchedule');
 
 Router.map(function() {
     this.route('home', {
         path: '/',
     });
- /*   if (Meteor.userId().roles == 'student')
-    {  */
+  
+});
+
+    
+/*   if (Meteor.userId().roles == 'student')
+    {  
    // this.route('/private');
-/*    }
+    }
     else
     {
     this.route('admin_private');
-    }  */
-});
+    }  
 
 
+/*
 
 var OnBeforeActions;
 
@@ -46,15 +53,17 @@ OnBeforeActions = {
 
 
 Router.onBeforeAction(OnBeforeActions.loginRequired, {
-    only: ['private','StudentPrivate']
+    except: ['home']
 });
 
-
-/*Router.plugin('ensureSignedIn', {
-  only: ['private','StudentPrivate']  
-});
-put on hold for now, if needed, don't forget to add additional template
 */
+
+
+Router.plugin('ensureSignedIn', {
+  except: ['home','signin']  
+});
+
+
 
 //UserAccounts Routes
 AccountsTemplates.configureRoute('changePwd');
