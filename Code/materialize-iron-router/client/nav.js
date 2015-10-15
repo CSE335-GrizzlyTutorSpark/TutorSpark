@@ -3,3 +3,13 @@ Template.nav.rendered = function () {
     //$('.collapsible').collapsible();
 };
 
+
+
+Template.nav.helpers({
+    'showUserName' : function(){
+        return Meteor.user().name;
+}
+});
+
+
+

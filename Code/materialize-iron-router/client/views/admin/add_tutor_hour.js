@@ -1,16 +1,24 @@
 Template.AddTutorHour.helpers({
-'selectedHighlight': function(){
-    ///codes
-},
-    
-'clickToggle': function(){
-//more codes
+'selectedToggle': function(){
+//return "selected"
 }
 });
 
 
 Template.AddTutorHour.events({
-    'click div':function(){
-    console.log("you clicked an div element");
+    'click .free':function(){
+    console.log("you clicked an div element");                
+    $(this).remove('free');
+    $(this).add('selected');  
+    },
+    
+    'click .selected':function(){
+    console.log("you clicked an select div element");
     }
+});  
+
+$('.free').click(function() {
+ console.log("you clicked an div element"); 
+    $(this).remove('free');
+    $(this).add('selected'); 
 });

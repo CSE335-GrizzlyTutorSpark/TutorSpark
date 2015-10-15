@@ -1,6 +1,6 @@
 <template name="AddTutorHour">
-    <p>Hour Grid</p>
-    <div class="schedulegrid">
+    <h3>Hour Grid</h3>
+    
     <div class="row">
         <div class="col s1s">Time</div>
         <div class="col s1s">Mon</div>
@@ -18,7 +18,7 @@
         <div class="col s1s free">    &nbsp;</div>
         <div class="col s1s free">    &nbsp;</div>
         <div class="col s1s free">    &nbsp;</div>
-        <div class="col s1s free">    &nbsp;</div>
+        <div class="col s1s selected">    &nbsp;</div>
         <div class="col disable">&nbsp;</div>
         <div class="col disable">&nbsp;</div>
     </div>
@@ -121,12 +121,12 @@
         <div class="col s1s free">&nbsp;    </div>
         <div class="col s1s free">&nbsp;    </div>
         <div class="col s1s free">&nbsp;    </div>
-        <div class="col s1s selected">&nbsp;    </div>
+        <div class="col s1s free">&nbsp;    </div>
         <div class="col disable">&nbsp;    </div>
         <div class="col disable">&nbsp;    </div>
         <div class="col disable">&nbsp;    </div>
     </div>
-    </div>    
+    
     <!--
      <div class="row">
         <div class="col s1s">07-08:00</div>
@@ -139,7 +139,5 @@
         <div class="col s1s disable">    </div>
     </div>
     -->
-    <a href="{{pathFor 'AddTutorCourse'}}" class="waves-effect waves-teal btn-flat">Back</a>
-     <button href="#" class="btn waves-effect waves-light" type="submit" id="addtutorhour" name="action">Next</button>
 
 </template>
