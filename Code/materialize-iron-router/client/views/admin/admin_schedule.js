@@ -1,6 +1,6 @@
 //temp test
 
-CalEvent= new Mongo.Collection('calevent');
+
 
 
 /*
@@ -28,7 +28,7 @@ Template.AdminSchedule.helpers({
 
 */
 
-
+/*
 Template.AdminSchedule.helpers({
         calendarOptions: {
             // Standard fullcalendar options
@@ -81,24 +81,29 @@ Template.AdminSchedule.helpers({
         },
     });
 
+*/
 
 
-/*
-CalEvents= new Meteor.Collection('calevents');
-Session.setDefault('editting_calevent', null);
-Session.setDefault('showEditEvent', false);
+
+//Session.setDefault('editting_calevent', null);
+//Session.setDefault('showEditEvent', false);
 
 Template.AdminSchedule.rendered= function(){
-    $('#calendar').fullCalendar({
-        dayClick:function( date, allDay, jsEvent, view ){
-            
+    var calendar= $('#calendar').fullCalendar({
+        dayClick:function( date,allDay, jsEvent, view ){
+            var calendarEvent={};
+            calendarEvent.start =date;
+            calendarEvent.end=date;
+            calendarEvent.title='New Event';
+            calendarEvent.owner=Meteor.userId;
+            Meteor.call('saveCalEvent',calendarEvent);
             },
-        eventClick:function(calEvent, jsEvent, view) {
-        },
+            
+            
+            
         events: function(start, end, callback) {
     }
 
          });
 }
 
-*/

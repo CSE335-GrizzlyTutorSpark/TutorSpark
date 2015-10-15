@@ -14,10 +14,16 @@ Template.StudentSchedule.helpers({
             height: 600,
             hiddenDays: [ 0 ],
             slotDuration: '01:00:00',
-            minTime: '08:00:00',
+            minTime: '09:00:00',
             maxTime: '19:00:00',
             lang: 'en',
             // Function providing events reactive computation for fullcalendar plugin
+            
+            header: {
+            left: 'prev,next today myCustomButton',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+            },
             events: function(start, end, timezone, callback) {
                 //console.log(start);
                 //console.log(end);

@@ -31,6 +31,9 @@ if (Meteor.users.find().fetch().length === 0) {
     });
   }
 
+CalEvent= new Mongo.Collection('calevent');
+/*
+
 Meteor.startup(function(){
     Meteor.methods({
         'saveCalEvent':function(ce){
