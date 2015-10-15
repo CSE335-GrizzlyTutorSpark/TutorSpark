@@ -1,49 +1,12 @@
-//temp test
-
-CalEvent= new Mongo.Collection('calevent');
-
-
-/*
-
-Template.AdminSchedule.rendered=function(){
-    var calendar= $('#calendar').fullCalendar({
-        dayClick:function(date,allDay,jsEvent,view) {
-         var calendarEvent= {};
-            calendarEvent.start = date;
-            calendarEvent.end= date;
-            calendarEvent.title='new event';
-            calendarEvent.owner= Meteor.userId;
-            Meteor.call('saveCalEvent', calendarEvent);
-            }
-        })
-   header: {
-        left: 'prev,next today myCustomButton',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-    }
-}
-
-Template.AdminSchedule.helpers({
-    options: function(
-
-*/
-
-
-Template.AdminSchedule.helpers({
+Template.ReactiveFullcalendar.helpers({
         calendarOptions: {
             // Standard fullcalendar options
             height: 600,
             hiddenDays: [ 0 ],
             slotDuration: '01:00:00',
-            minTime: '09:00:00',
+            minTime: '08:00:00',
             maxTime: '19:00:00',
             lang: 'en',
-            
-             header: {
-            left: 'prev,next today myCustomButton',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay'
-            },
             // Function providing events reactive computation for fullcalendar plugin
             events: function(start, end, timezone, callback) {
                 //console.log(start);
@@ -80,25 +43,3 @@ Template.AdminSchedule.helpers({
             ]
         },
     });
-
-
-
-/*
-CalEvents= new Meteor.Collection('calevents');
-Session.setDefault('editting_calevent', null);
-Session.setDefault('showEditEvent', false);
-
-Template.AdminSchedule.rendered= function(){
-    $('#calendar').fullCalendar({
-        dayClick:function( date, allDay, jsEvent, view ){
-            
-            },
-        eventClick:function(calEvent, jsEvent, view) {
-        },
-        events: function(start, end, callback) {
-    }
-
-         });
-}
-
-*/

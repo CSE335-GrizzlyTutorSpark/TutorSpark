@@ -31,6 +31,13 @@ if (Meteor.users.find().fetch().length === 0) {
     });
   }
 
+Meteor.startup(function(){
+    Meteor.methods({
+        'saveCalEvent':function(ce){
+            CalEvent.insert(ce);    
+        }
+    })
+});
 
 //Rest of DataBase Creation
 
