@@ -1,0 +1,85 @@
+<template name="AddTutor">
+  <h1 class="center">Add a New Tutor</h1>
+    
+    {{>TutorInputForm}}
+
+</template>
+
+<!--- for materialize Icon use -->
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+
+<template name="TutorInputForm">
+    
+   <div class="row">
+    <form class="col s12" id='studentinfo'>
+      <div class="row">
+        <div class="input-field col s6">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">phone</i>
+            <input id="phone_number" type="text" class="validate">
+          <label for="phone_number">Phone Number</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+        <!--- select box -->
+        <!-- inline use style for selectbox positioning only, change it if needed -->
+       <div class="row">
+       <select class="browser-default col s5" style="position: relative; left: 20px;" >
+      <option value="" disabled selected>Choose Student's Class Level</option>
+      <option value="Freshman">Freshman</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+       </select>
+       
+        <!-- hold for other selection if needed -->
+       <!--
+       <select class="browser-default col s5" style="position: relative; left: 80px;" >
+      <option value="" disabled selected>Choose Student's Class Level</option>
+      <option value="Freshman">Freshman</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+       </select>
+        -->
+       </div>
+       <div class="row" style="position: relative; left: 20px;">
+       <button class="btn waves-effect waves-light" type="submit" id="addtutor" name="action">Next</button>
+           
+    <!--   navi link for develop     
+        <a href="{{pathFor 'AddTutorCourse'}}" class="waves-effect waves-teal btn-flat">Temp Navi Button</a>
+       </div>
+       -->
+       </div>
+       </form>
+     
+
+       
+     
+       
+    </div>
+    
+ 
+
+</template>
