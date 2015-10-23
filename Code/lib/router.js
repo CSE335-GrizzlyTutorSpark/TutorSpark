@@ -22,6 +22,7 @@ Router.route('/StudentSchedule');
 Router.route('/AddTutorCourse');
 Router.route('/AddTutorHour');
 Router.route('/AdminModifySchedule');
+Router.route('/BlahBlah');
 
 Router.map(function() {
     this.route('home', {
