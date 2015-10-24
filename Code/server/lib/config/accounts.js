@@ -1,6 +1,7 @@
 // Set up login services
 Meteor.startup(function() {
- // for email process.env.MAIL_URL= '
+ // for email 
+    process.env.MAIL_URL= 'smtp://admin@sandbox3615dcc6e5244d5e923658f34b9c79b1.mailgun.org:testtest@smtp.mailgun.org:587'
     
     // Add Facebook configuration entry
   /*
