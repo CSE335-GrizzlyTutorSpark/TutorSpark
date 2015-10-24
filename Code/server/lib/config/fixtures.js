@@ -44,9 +44,11 @@ Meteor.startup(function(){
 
 */
 
-//Rest of DataBase Creation
+// :::::::::::::::::::::::::::::::
+// :: REST OF DATABASE CREATION ::
+// :::::::::::::::::::::::::::::::
 
-//Creating static Department List
+// CREATING STATIC DEPARTMENT/COURSE COLLECTION
 
 /*
 if (Meteor.departments.find().fetch().length === 0) {
@@ -54,14 +56,26 @@ if (Meteor.departments.find().fetch().length === 0) {
     console.log('Creating Departments: ');
     
     // !!!!!! Should be a static variable !!!!!!
+
     staticDepts = [
-        ("Department1"),
-        ("Department2")       
+        [("Mathematics"),
+         ("MAT101"),("MAT102"),("MAT103"),("MAT104")],
+        [("Biology"),
+         ("BIO101"),("BIO102"),("BIO103"),("BIO104")],
+        [("Computer Science & Engineering"),
+         ("CSE101"),("CSE102"),("CSE103"),("CSE104")],
+        [("Computer Information Technology"),
+         ("CIT101"),("CIT102"),("CIT103"),("CIT104")]
       ];
 
-    for(counter = 0; counter < staticDepts.length; counter++) {
-        Department.insert( {deptName: staticDepts[counter]} );
-        console.log(staticDepts[counter]);
+    for(d = 0; d < staticDepts.length; d++) {
+        tempArray = staticDepts[d];
+        Catalog.insert({department: tempArray[0]});
+        //console.log(tempArray[0]);
+        for(c = 1; c < tempArray.length; c++) {
+            Catalog.insert({courses: {course: tempArray[c]}});
+            //console.log(tempArray[c]);
+        }
     }
 }
 */

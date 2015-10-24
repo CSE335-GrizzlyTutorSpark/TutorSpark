@@ -21,4 +21,10 @@ Template.BlahBlah.events({
         // Prevent the page from refreshing
         return false;
     }
-})
+});
+
+Template.BlahBlah.helpers({
+    'blah': function() {
+        return "test"
+    }
+});

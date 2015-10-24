@@ -10,11 +10,10 @@ BlahBlah = new Mongo.Collection('blahblah');
 
 // For each collection, try to comment-in the attributes for clarity.
 
-Department = new Mongo.Collection('departments');
-    // deptName:    // Ex: 'Mathematics'
-Course = new Mongo.Collection('courses');
-    // deptID:      // Ex: [departments:_id]
-    // courseName:  // Ex: 'CSE 480'
+Catalog = new Mongo.Collection('catalog');
+    // Department:  // Ex: "Mathematics"
+    // Courses:
+        // Course:  // Ex: "MAT101"
 Topic = new Mongo.Collection('topics');
     // courseID:    // Ex: [courses:_id]
     // topicName:   // Ex: 'Derivatives'
