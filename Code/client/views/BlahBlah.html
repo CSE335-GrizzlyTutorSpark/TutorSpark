@@ -6,4 +6,23 @@
         <input type="text" name="blahName" placeholder="Enter your new Blah's name">
         <input type="submit" value="Submit">
     </form>
+    
+    <br>
+    
+    This text is before the blahs.
+    
+    <br>
+    
+    {{#each blahblah}}
+        <li>{{> blah}}</li>
+    {{/each}}
+    
+    <br>
+    
+    This text is after the blahs.
+    
+</template>
+
+<template name="blah">
+    <li>{{blahName}}</li>
 </template>
