@@ -8,3 +8,9 @@
 Meteor.publish('blahblah', function() {
     return BlahBlah.find();
 });
+
+/*
+Meteor.publish('users', function() {
+    return users.find();
+});
+*/

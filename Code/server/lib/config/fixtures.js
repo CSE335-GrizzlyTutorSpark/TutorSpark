@@ -31,7 +31,7 @@ if (Meteor.users.find().fetch().length === 0) {
     });
   }
 
-CalEvent= new Mongo.Collection('calevent');
+CalEvent = new Mongo.Collection('calevent');
 /*
 
 Meteor.startup(function(){
@@ -42,21 +42,26 @@ Meteor.startup(function(){
     })
 });
 
+*/
+
 //Rest of DataBase Creation
 
-/* if (Meteor.
+//Creating static Department List
 
+/*
+if (Meteor.departments.find().fetch().length === 0) {
 
+    console.log('Creating Departments: ');
+    
+    // !!!!!! Should be a static variable !!!!!!
+    staticDepts = [
+        ("Department1"),
+        ("Department2")       
+      ];
 
-
-
-
-
-
-
-
-
-
-
-
+    for(counter = 0; counter < staticDepts.length; counter++) {
+        Department.insert( {deptName: staticDepts[counter]} );
+        console.log(staticDepts[counter]);
+    }
+}
 */
