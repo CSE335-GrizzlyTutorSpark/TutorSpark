@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-abcdefghijklmnopqrstuvwxyzaaaaabbbbbcccccdddddeeeee
-=======
-abcdefghijklmnopqrstuvwxyz0123456789
->>>>>>> origin/master
