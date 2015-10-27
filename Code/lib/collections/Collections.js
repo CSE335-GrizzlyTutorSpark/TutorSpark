@@ -10,7 +10,7 @@ BlahBlah = new Mongo.Collection('blahblah');
 
 // For each collection, try to comment-in the attributes for clarity.
 
-Catalog = new Mongo.Collection('catalog');
+//Catalog = new Mongo.Collection('catalogs');
     // Department:  // Ex: "Mathematics"
     // Courses:
         // Course:  // Ex: "MAT101"

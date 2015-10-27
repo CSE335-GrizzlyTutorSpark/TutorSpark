@@ -2,4 +2,5 @@
 // collection subscriptions
 
 Meteor.subscribe("blahblah");
+Meteor.subscribe("catalogs");
 Meteor.subscribe("Users");

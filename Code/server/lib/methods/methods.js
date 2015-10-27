@@ -12,6 +12,10 @@ Meteor.methods({
     
     'createNewBlahBlah': function(Name) {
         BlahBlah.insert( {blahName: Name} );
+    },
+    
+    'createNewUser': function(Name) {
+        Users.insert( {username: Name} );
     }
     
     ///////////////////////////////

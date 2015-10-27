@@ -9,6 +9,10 @@ Meteor.publish('blahblah', function() {
     return BlahBlah.find();
 });
 
+Meteor.publish('catalogs', function() {
+    return Catalog.find()
+});
+
 /*
 Meteor.publish('users', function() {
     return users.find();

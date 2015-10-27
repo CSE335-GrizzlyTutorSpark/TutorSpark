@@ -1,6 +1,6 @@
 Template.nav.rendered = function () {
     $(".button-collapse").sideNav();
-    //$('.collapsible').collapsible();
+    $('.collapsible').collapsible();
 };
 
 
@@ -10,6 +10,3 @@ Template.nav.helpers({
         return Meteor.user().name;
 }
 });
-
-
-

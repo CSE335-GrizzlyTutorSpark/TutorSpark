@@ -8,17 +8,17 @@
     </nav>
     
       
-   <!--<a class="button-collapse block" data-activates="slide-out" href="#">
+   <a class="button-collapse block" data-activates="slide-out" href="#">
        <i class="mdi-navigation-menu"></i>
-          </a> -->
+          </a>
  
-<ul id="nav-mobile" class="right side-nav fixed" style="width:240px"> 
+<ul id="slide-out" class="side-nav" style="width:240px"> 
        <img src="imgs/ou-logo.jpg" alt="ou">
             <br><br>
-          <li><a href="{{pathFor 'home'}}">Home</a></li>
+          <li><a href="{{pathFor 'home'}}">HOME</a></li>
     
     <!-- Created for testing -->
-    <li><a href="{{pathFor 'BlahBlah'}}">Blah Blah Test</a></li>
+    <li><a href="{{pathFor 'BlahBlah'}}">BLAH BLAH TEST</a></li>
     
     {{#if isInRole 'admin'}}
     <li><a href="{{pathFor 'AddTutor'}}">Add Tutor</a></li> 
@@ -46,10 +46,5 @@
     
     {{/if}}
     </ul>
-        
-        
-
-              
+   
 </template>
-
-
