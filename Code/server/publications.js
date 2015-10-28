@@ -14,3 +14,9 @@ Meteor.publish('users', function() {
     return users.find();
 });
 */
+
+
+//for retriving list of tutors in admin view
+Meteor.publish('tutors', function(){
+    return Meteor.users.find({roles:tutor},{});
+});

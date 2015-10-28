@@ -37,7 +37,7 @@
          <li>{{> atNavButton }}</li>
             {{#if currentUser}}
      <!--- leave out for now {{userinfo}} -->
-            <li>Welcome, {{currentUser.name}}</li>
+            <li>Welcome, {{currentUser.profile.name}}</li>
             
             {{#if isInRole 'student'}}
             

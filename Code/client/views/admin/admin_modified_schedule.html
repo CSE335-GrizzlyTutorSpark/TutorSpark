@@ -1,5 +1,34 @@
 <template name="AdminModifySchedule">
-  <h1 class="center">all tutor schedule will be display here as a list</h1>
-     <a href="{{pathFor 'AdminSchedule'}}" class="waves-effect waves-teal btn-flat">Calender View</a>
+  
+    <h3>List of Tutors</h3>
+    <table class="bordered">
+        <thead>
+          <tr>
+              <th data-field="name">Tutor Name</th>
+              <th data-field="subjectname">Subject</th>
+              <th data-field="timebutton">Time</th>
+          </tr>
+        </thead>
+
+        <tbody>
+        
+            
+            
+                {{#each tutor}}
+         
+                <tr>
+                <td>{{profile.name}}</td>
+                <td>nothing yet</td>
+                <td><a href="{{pathFor 'AdminSchedule'}}" class="waves-effect waves-teal btn-flat">Modified Tutor Time</a></td>
+                </tr>
+            
+            
+                {{/each}}
+            
+            
+            
+        </tbody>
+      </table>
+     
 </template>
 

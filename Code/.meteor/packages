@@ -26,3 +26,5 @@ mizzao:jquery-ui
 jquery
 mrt:moment
 mrt:fullcalendar
+autopublish
+check
