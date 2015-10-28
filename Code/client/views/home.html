@@ -1,39 +1,102 @@
 
 <template name="home">
-    <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
-        <br>
-    <table class="centered">
-        <thead>
-            <tr>
-                <th>
-                    Step 1: Select Your Courses
-                </th>
-                <th>
-                    Step 2: Find a Tutor
-                </th>
-                <th>
-                    Step 3: View Your Schedule
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    Here's a line of text
+    
+    <!-- if the user logs in as a Student,
+         the elements below will be displayed -->
+    
+    {{#if isInRole 'student'}}
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">As a student user, you'll be able to select courses you're interested in receiving some<br>
+                           tutoring for, schedule tutoring sessions, and review your upcoming scheduled sessions</h1>
+        <table class="centered">
+            <thead>
+                <tr>
+                    <th>
+                        Step 1: Select Your Courses
+                    </th>
+                    <th>
+                        Step 2: Find a Tutor
+                    </th>
+                    <th>
+                        Step 3: View Your Schedule
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Open the sidebar menu,
                         <br>
-                    and another line of text
-                </td>
-                <td>
-                    Here's a second set of
+                        and select "My Courses"
+                    </td>
+                    <td>
+                        Once you've chosen some courses,
                         <br>
-                    text about something
-                </td>
-                <td>
-                    And one last line
+                        select the "Find A Tutor" page
                         <br>
-                    of text
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                        to schedule your first session
+                    </td>
+                    <td>
+                        Once you've scheduled a
+                        <br>
+                        tutoring session, you can
+                        <br>
+                        select the "My Schedule"
+                        <br>
+                        page to review your meetings
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {{/if}}
+    
+    <!-- If the user logs in as a Tutor,
+         the elements below will be displayed -->
+    
+    {{#if isInRole 'tutor'}}
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">As a tutor user, you'll be able to select courses that you are capable of tutoring for,<br>
+                           along with the times you are available to tutor. Once a student has scheduled a session<br>
+                           with you, you will be able to review your scheduled meetings in a personal calendar.</h1>
+        <table class="centered">
+            <thead>
+                <tr>
+                    <th>
+                        Step 1: Select Your Courses
+                    </th>
+                    <th>
+                        Step 2: Find a Tutor
+                    </th>
+                    <th>
+                        Step 3: View Your Schedule
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Open the sidebar menu,
+                        <br>
+                        and select "My Courses"
+                    </td>
+                    <td>
+                        Once you've chosen some courses,
+                        <br>
+                        select the "Find A Tutor" page
+                        <br>
+                        to schedule your first session
+                    </td>
+                    <td>
+                        Once you've scheduled a
+                        <br>
+                        tutoring session, you can
+                        <br>
+                        select the "My Schedule"
+                        <br>
+                        page to review your meetings
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {{/if}}
 </template>

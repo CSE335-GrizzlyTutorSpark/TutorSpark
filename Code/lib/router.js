@@ -25,6 +25,7 @@ Router.route('/tutorAvailability');
 
 // Admin Routes
 Router.route('/adminDashboard');
+Router.route('/adminPromoteStudent');
 
 // Test Route
 Router.route('/BlahBlah');

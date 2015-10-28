@@ -1,3 +1,14 @@
+var mySubmitFunc = function(error, state) {
+    if (!error) {
+        if (state === "signIn") {
+            Materialize.toast('Welcome Back', 4000)
+        }
+        if (state === "signUp") {
+            Materialize.toast('Account Created', 4000)
+        }
+    }
+};
+
 // Options
 AccountsTemplates.configure({
     //defaultLayout: 'emptyLayout',
@@ -24,4 +35,6 @@ AccountsTemplates.configure({
     // Privacy Policy and Terms of Use
     //privacyUrl: 'privacy',
     //termsUrl: 'terms-of-use',
+    
+    onSubmitHook: mySubmitFunc
 });
