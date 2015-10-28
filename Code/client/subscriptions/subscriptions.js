@@ -2,4 +2,6 @@
 // collection subscriptions
 
 Meteor.subscribe("blahblah");
+
+Meteor.subscribe("tutor");
 Meteor.subscribe("Users");

@@ -18,5 +18,6 @@ Meteor.publish('users', function() {
 
 //for retriving list of tutors in admin view
 Meteor.publish('tutors', function(){
-    return Meteor.users.find({roles:tutor},{});
+     return Meteor.users.find({}, {fields: {roles: 1}});
 });
+
