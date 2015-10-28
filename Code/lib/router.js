@@ -9,19 +9,24 @@ Router.configure({
     } 
 });
 
-
-//Router.route('/select_course');
+// General Site Routes
 Router.route('/policy');
-Router.route('/aboutus');
-Router.route('/signin');
-Router.route('/StudentPrivate');
-Router.route('/AdminSchedule');
-Router.route('/AddTutor');
-Router.route('/AdminPrivate');
-Router.route('/StudentSchedule');
-Router.route('/AddTutorCourse');
-Router.route('/AddTutorHour');
-Router.route('/AdminModifySchedule');
+Router.route('/aboutUs');
+Router.route('/signIn');
+
+// Student Routes
+Router.route('/studentCourses');
+Router.route('/studentSchedule');
+Router.route('/studentFindTutor');
+
+// Tutor Routes
+Router.route('/tutorCourses');
+Router.route('/tutorAvailability');
+
+// Admin Routes
+Router.route('/adminDashboard');
+
+// Test Route
 Router.route('/BlahBlah');
 
 Router.map(function() {
@@ -64,7 +69,7 @@ Router.onBeforeAction(OnBeforeActions.loginRequired, {
 
 
 Router.plugin('ensureSignedIn', {
-  except: ['home','signin']  
+  except: ['home','signIn']  
 });
 
 

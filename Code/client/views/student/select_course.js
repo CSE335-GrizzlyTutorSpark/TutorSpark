@@ -1,6 +1,6 @@
 /*
 
-Template.selectcourse.events({
+Template.studentCourses.events({
   'click #coursesubmit': function() {
       Router.go('/results');
   }

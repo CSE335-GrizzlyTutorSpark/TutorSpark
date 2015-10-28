@@ -14,6 +14,10 @@ Meteor.methods({
         BlahBlah.insert( {blahName: Name} );
     },
     
+    'displayAllBlahBlahs': function() {
+        return BlahBlah.find();
+    },
+    
     'createNewUser': function(Name) {
         Users.insert( {username: Name} );
     }

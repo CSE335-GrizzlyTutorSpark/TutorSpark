@@ -26,5 +26,9 @@ Template.BlahBlah.events({
 Template.BlahBlah.helpers({
     'blah': function() {
         return "test"
+    },
+    
+    'loadBlahs': function() {
+        return displayAllBlahBlahs();
     }
 });

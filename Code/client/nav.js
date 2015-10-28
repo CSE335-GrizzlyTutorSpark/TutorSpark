@@ -1,9 +1,9 @@
 Template.nav.rendered = function () {
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({
+        closeOnClick: true
+    });
     $('.collapsible').collapsible();
 };
-
-
 
 Template.nav.helpers({
     'showUserName' : function(){

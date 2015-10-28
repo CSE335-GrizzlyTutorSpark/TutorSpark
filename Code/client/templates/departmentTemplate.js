@@ -15,4 +15,3 @@ Template.departmentTemplate.helpers({
         {courses: [{courseName: "1"},
                    {courseName: "2"}]
         */
-*/

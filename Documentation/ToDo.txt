@@ -1,0 +1,9 @@
+Issues to tackle:
+
+ 1. Getting \lib collections.js file to instantiate collections
+     before the \server fixtures.js file references them.
+
+	Error: cannot call .find() on undefined
+
+ 2. Reading data from a collection into an HTML page,
+     even as plain text.

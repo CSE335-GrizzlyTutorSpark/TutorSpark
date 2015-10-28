@@ -1,10 +1,8 @@
-Template.AddTutorCourse.events({
+Template.StudentFindTutor.events({
   'click #addtutorcourse': function() {
    
       //prevent default browser submit causing issue, modified this later
       event.preventDefault();
-      
-      
       
       //function check code, del later
     //  alert("My button was clicked!");

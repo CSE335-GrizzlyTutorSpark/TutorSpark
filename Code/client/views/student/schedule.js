@@ -8,7 +8,7 @@ Template.schedule.events({
 
 */
 
-Template.StudentSchedule.helpers({
+Template.studentSchedule.helpers({
         calendarOptions: {
             // Standard fullcalendar options
             height: 600,
