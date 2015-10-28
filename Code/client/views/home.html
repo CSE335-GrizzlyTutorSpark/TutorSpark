@@ -62,10 +62,10 @@
             <thead>
                 <tr>
                     <th>
-                        Step 1: Select Your Courses
+                        Step 1: Enter your Courses
                     </th>
                     <th>
-                        Step 2: Find a Tutor
+                        Step 2: Enter your Availability
                     </th>
                     <th>
                         Step 3: View Your Schedule
@@ -75,28 +75,40 @@
             <tbody>
                 <tr>
                     <td>
-                        Open the sidebar menu,
-                        <br>
-                        and select "My Courses"
+                        Open the sidebar menu, and select
+                            <br>
+                        "My Courses" to choose courses that
+                            <br>
+                        you are able to tutor students in
                     </td>
                     <td>
                         Once you've chosen some courses,
-                        <br>
-                        select the "Find A Tutor" page
-                        <br>
-                        to schedule your first session
+                            <br>
+                        open the sidebar and select the
+                            <br>
+                        "My Availability" link to choose
+                            <br>
+                        times you are available to teach
                     </td>
                     <td>
-                        Once you've scheduled a
-                        <br>
-                        tutoring session, you can
-                        <br>
-                        select the "My Schedule"
-                        <br>
-                        page to review your meetings
+                        When a student schedules a session
+                            <br>
+                        with you, you will receive an email
+                            <br>
+                        notification and will be able to view
+                            <br>
+                        the meeting in the "My Schedule" page
                     </td>
                 </tr>
             </tbody>
         </table>
+    {{/if}}
+    
+    <!-- if a user logs in as an admin,
+         we should navigate them to the dashboard -->
+    {{#if isInRole 'admin'}}
+        <!-- placeholder for dashboard auto-navigation -->
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">Use the sidebar to navigate to the Admin Dashboard</h1>
     {{/if}}
 </template>
