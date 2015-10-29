@@ -1,6 +1,6 @@
 Template.adminPromoteStudent.helpers({
     'studentsToPromote':function(){
-        return Meteor.users.find({roles:'admin'});
+        return Meteor.users.find({roles:'student'});
     }
     
     /*

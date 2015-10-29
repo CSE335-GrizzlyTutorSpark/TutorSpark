@@ -32,6 +32,9 @@ Template.adminTutorHours.events({
     $('#'+selected).addClass('free');
       $('#'+selected).removeClass('selected');   
     _dep.changed();
+    },
+    'click #finishButton': function() {
+        Materialize.toast('Tutor Account Created!', 4000);
     }
 });  
 

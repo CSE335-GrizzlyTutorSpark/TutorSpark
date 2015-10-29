@@ -24,6 +24,7 @@ Router.route('/tutorAvailability');
 // Admin Routes
 Router.route('/adminDashboard');
 Router.route('/adminPromoteStudent');
+Router.route('/adminTutorCourse');
 Router.route('/adminTutorHours');
 Router.route('/adminModifySchedule');
 
@@ -70,7 +71,7 @@ Router.onBeforeAction(OnBeforeActions.loginRequired, {
 
 
 Router.plugin('ensureSignedIn', {
-  except: ['home','signIn']  
+  only: ['home']
 });
 
 

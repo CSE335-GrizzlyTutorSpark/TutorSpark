@@ -13,7 +13,7 @@
         <div class="col s1s">Sun</div>
     </div>
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">09-10:00</div> 
         <div class="col s1s free" id="m0910">    &nbsp;</div>
         <div class="col s1s free" id="t0910">    &nbsp;</div>
@@ -24,7 +24,7 @@
         <div class="col disable">&nbsp;</div>
     </div>
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">10-11:00</div>
         <div class="col s1s free" id="m1011"> &nbsp;  </div>
         <div class="col s1s free" id="t1011"> &nbsp;   </div>
@@ -35,9 +35,9 @@
         <div class="col disable">&nbsp;    </div>
     </div>
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">11-12:00</div>
-       <div class="col s1s free" id="m1112">&nbsp;    </div>
+        <div class="col s1s free" id="m1112">&nbsp;    </div>
         <div class="col s1s free" id="t1112">&nbsp;    </div>
         <div class="col s1s free" id="w1112">&nbsp;    </div>
         <div class="col s1s free" id="th1112">&nbsp;    </div>
@@ -46,9 +46,9 @@
         <div class="col disable">&nbsp;    </div>
     </div>
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">12-01:00</div>
-       <div class="col s1s free" id="m1201"> &nbsp;   </div>
+        <div class="col s1s free" id="m1201"> &nbsp;   </div>
         <div class="col s1s free" id="t1201"> &nbsp;   </div>
         <div class="col s1s free" id="w1201"> &nbsp;   </div>
         <div class="col s1s free" id="th1201"> &nbsp;   </div>
@@ -58,7 +58,7 @@
     </div>
     
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">01-02:00</div>  
         <div class="col s1s free" id="m0102">&nbsp;    </div>
         <div class="col s1s free" id="t0102">&nbsp;    </div>
@@ -70,9 +70,9 @@
     </div>
     
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">02-03:00</div>
-       <div class="col s1s free" id="m0203">&nbsp;    </div>
+        <div class="col s1s free" id="m0203">&nbsp;    </div>
         <div class="col s1s free" id="t0203">&nbsp;    </div>
         <div class="col s1s free" id="w0203">&nbsp;    </div>
         <div class="col s1s free" id="th0203">&nbsp;    </div>
@@ -82,7 +82,7 @@
     </div>
     
     
-        <div class="row">
+    <div class="row">
         <div class="col s1s">03-04:00</div>
         <div class="col s1s free" id="m0304">&nbsp;    </div>
         <div class="col s1s free" id="t0304">&nbsp;    </div>
@@ -93,7 +93,7 @@
         <div class="col s1s free" id="su0304">&nbsp;    </div>
     </div>
     
-     <div class="row">
+    <div class="row">
         <div class="col s1s">04-05:00</div>
         <div class="col s1s free" id="m0405">&nbsp;    </div>
         <div class="col s1s free" id="t0405">&nbsp;    </div>
@@ -116,8 +116,7 @@
         <div class="col s1s free" id="su0506">&nbsp;    </div>
     </div>
     
-    
-     <div class="row">
+    <div class="row">
         <div class="col s1s">06-07:00</div>
         <div class="col s1s free" id="m0607">&nbsp;    </div>
         <div class="col s1s free" id="t0607">&nbsp;    </div>
@@ -127,24 +126,15 @@
         <div class="col disable">&nbsp;    </div>
         <div class="col disable">&nbsp;    </div>
     </div>
-    <p style="font-size:16px; margin-left:40%">
+    
+    <p style="font-size:16px; margin-left:43%">
             {{showNumberofSellection}}
     </p>
-    <!--
-     <div class="row">
-        <div class="col s1s">07-08:00</div>
-        <div class="col s1s">    </div>
-        <div class="col s1s">    </div>
-        <div class="col s1s">    </div>
-        <div class="col s1s">    </div>
-        <div class="col s1s">    </div>
-        <div class="col s1s disable">    </div>
-        <div class="col s1s disable">    </div>
-    </div>
-    -->
     
-        <div class="centered" style="margin-left:36%">
-            <a class="waves-effect waves-light btn">Submit</a>
-            <a class="waves-effect waves-light btn" style="margin-left:2%" href="{{pathFor 'adminPromoteStudent'}}">Cancel</a>
+        <div class="centered" style="margin-left:40%">
+            <!-- Submit button also needs to call a function to update the tutor's hours -->
+            <a class="waves-effect waves-light btn" id="finishButton" href="{{pathFor 'adminDashboard'}}">Finish</a>
+            <a class="waves-effect waves-light btn" style="margin-left:2%" href="{{pathFor 'adminTutorCourse'}}">Cancel</a>
         </div>
+    
 </template>

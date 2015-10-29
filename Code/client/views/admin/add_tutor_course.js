@@ -1,4 +1,4 @@
-Template.StudentFindTutor.events({
+Template.adminTutorCourse.events({
   'click #addtutorcourse': function() {
    
       //prevent default browser submit causing issue, modified this later

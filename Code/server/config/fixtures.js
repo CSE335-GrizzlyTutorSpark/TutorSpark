@@ -5,9 +5,9 @@ if (Meteor.users.find().fetch().length === 0) {
     console.log('Creating users: ');
 
     var users = [
-        {name:"Student1",email:"normal1@example.com",roles:['student']},
-        {name:"Student2",email:"normal2@example.com",roles:['student']},
-        {name:"Student3",email:"normal3@example.com",roles:['student']},
+        {name:"John C. Doe",email:"normal1@example.com",roles:['student']},
+        {name:"Jane M Doe",email:"normal2@example.com",roles:['student']},
+        {name:"Robert Student",email:"normal3@example.com",roles:['student']},
         {name:"Tutor1",email:"tutor1@example.com",roles:['tutor']},
         {name:"Tutor2",email:"tutor2@example.com",roles:['tutor']},
         {name:"Admin1",email:"admin1@example.com",roles:['admin']},
@@ -52,8 +52,6 @@ Meteor.startup(function(){
 // :::::::::::::::::::::::::::::::
 
 // CREATING STATIC DEPARTMENT/COURSE COLLECTION
-
-Catalog = new Mongo.Collection('catalogs');
 
 // Check to see if Catalog does -not- exist
 if (Catalog) {

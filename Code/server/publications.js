@@ -9,12 +9,10 @@ Meteor.publish('blahblah', function() {
     return BlahBlah.find();
 });
 
-Meteor.publish('catalogs', function() {
+Meteor.publish("catalogs", function() {
     return Catalog.find();
 });
 
-/*
-Meteor.publish('users', function() {
-    return users.find();
+Meteor.publish('allUserData', function() {
+    return Meteor.users.find({}, {fields: {'roles': 1}});
 });
-*/

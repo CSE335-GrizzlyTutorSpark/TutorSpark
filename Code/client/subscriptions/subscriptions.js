@@ -3,4 +3,4 @@
 
 Meteor.subscribe("blahblah");
 Meteor.subscribe("catalogs");
-Meteor.subscribe("Users");
+Meteor.subscribe("allUserData");

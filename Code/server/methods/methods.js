@@ -20,10 +20,23 @@ Meteor.methods({
     
     'createNewUser': function(Name) {
         Users.insert( {username: Name} );
-    }
+    },
+    
+    ////////////////////////////////////
+    // Availability - related methods //
+    ////////////////////////////////////
+
+    /*
+    'createAvailability':function(ID, Hours) {
+        Availability.insert( {UserID:ID, 
+    
+    'updateAvailability': function(ID, Hours) {
+        Availability.insert( {
+    */
+    
     
     ///////////////////////////////
     // Meeting - related methods //
-    ///////////////////////////////  
+    ///////////////////////////////
     
 })
