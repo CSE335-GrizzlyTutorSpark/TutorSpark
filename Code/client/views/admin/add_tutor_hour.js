@@ -1,6 +1,6 @@
 var _dep=new Deps.Dependency();
 
-Template.AddTutorHour.helpers({
+Template.adminTutorHours.helpers({
     
     'showNumberofSellection': function(){
     _dep.depend();
@@ -11,7 +11,7 @@ Template.AddTutorHour.helpers({
 });
 
 
-Template.AddTutorHour.events({
+Template.adminTutorHours.events({
     'click .free':function(){
                 
     

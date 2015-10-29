@@ -10,7 +10,7 @@ Meteor.publish('blahblah', function() {
 });
 
 Meteor.publish('catalogs', function() {
-    return Catalog.find()
+    return Catalog.find();
 });
 
 /*

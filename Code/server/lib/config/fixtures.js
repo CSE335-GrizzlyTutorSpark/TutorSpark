@@ -5,10 +5,13 @@ if (Meteor.users.find().fetch().length === 0) {
     console.log('Creating users: ');
 
     var users = [
-        {name:"Normal User",email:"normal@example.com",roles:['student']},
-        {name:"View-Secrets User",email:"view@example.com",roles:['student,tutor']},
-        {name:"Manage-Users User",email:"manage@example.com",roles:['admin']},
-        {name:"Admin User",email:"admin@example.com",roles:['admin']}
+        {name:"Student1",email:"normal1@example.com",roles:['student']},
+        {name:"Student2",email:"normal2@example.com",roles:['student']},
+        {name:"Student3",email:"normal3@example.com",roles:['student']},
+        {name:"Tutor1",email:"tutor1@example.com",roles:['tutor']},
+        {name:"Tutor2",email:"tutor2@example.com",roles:['tutor']},
+        {name:"Admin1",email:"admin1@example.com",roles:['admin']},
+        {name:"Admin2",email:"admin2@example.com",roles:['admin']}
       ];
 
     _.each(users, function (userData) {
@@ -50,14 +53,16 @@ Meteor.startup(function(){
 
 // CREATING STATIC DEPARTMENT/COURSE COLLECTION
 
-console.log('Creating Departments/Courses: ');
-
 Catalog = new Mongo.Collection('catalogs');
 
-// Check to see if departments have already been created
-//if (Meteor.catalog.find().fetch().length === 0) {    
+// Check to see if Catalog does -not- exist
+if (Catalog) {
+    
+    if (Catalog.find().fetch().length === 0) {
 
-    // create an array of documents to be inserted
+    console.log('Creating Departments/Courses: ');
+    
+    // and create an array of documents to be inserted
     deptInserts =
         [
             {
@@ -94,10 +99,13 @@ Catalog = new Mongo.Collection('catalogs');
                      {courseName: "CSE104"}]
             }
         ];
-    // now we insert the document array into the collection
-    for(i = 0; i < deptInserts.length; i++) {
-        Catalog.insert( deptInserts[i] );
+
+        // now we insert the document array into the collection
+        for(i = 0; i < deptInserts.length; i++) {
+            Catalog.insert( deptInserts[i] );
+        }
     }
+}
     
 //}; //close the outer if statement
 

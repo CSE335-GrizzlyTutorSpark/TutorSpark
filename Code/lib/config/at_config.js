@@ -32,7 +32,7 @@ AccountsTemplates.configure({
     negativeFeedback: false,
     positiveFeedback:false,
 
-    // Privacy Policy and Terms of Use
+    //Privacy Policy and Terms of Use
     //privacyUrl: 'privacy',
     //termsUrl: 'terms-of-use',
     

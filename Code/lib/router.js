@@ -6,7 +6,7 @@ Router.configure({
     yieldTemplates: {
         nav: {to: 'nav'},
         footer: {to: 'footer'},
-    } 
+    }
 });
 
 // General Site Routes
@@ -15,9 +15,7 @@ Router.route('/aboutUs');
 Router.route('/signIn');
 
 // Student Routes
-Router.route('/studentCourses');
 Router.route('/studentSchedule');
-Router.route('/studentFindTutor');
 
 // Tutor Routes
 Router.route('/tutorCourses');
@@ -26,6 +24,8 @@ Router.route('/tutorAvailability');
 // Admin Routes
 Router.route('/adminDashboard');
 Router.route('/adminPromoteStudent');
+Router.route('/adminTutorHours');
+Router.route('/adminModifySchedule');
 
 // Test Route
 Router.route('/BlahBlah');
@@ -78,7 +78,7 @@ Router.plugin('ensureSignedIn', {
 //UserAccounts Routes
 AccountsTemplates.configureRoute('changePwd');
 AccountsTemplates.configureRoute('enrollAccount');
-// AccountsTemplates.configureRoute('forgotPwd');
+//AccountsTemplates.configureRoute('forgotPwd');
 AccountsTemplates.configureRoute('resetPwd');
 AccountsTemplates.configureRoute('signIn');
 AccountsTemplates.configureRoute('signUp');

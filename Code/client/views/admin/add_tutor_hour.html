@@ -1,5 +1,6 @@
-<template name="StudentFindTutor">
-    <h3>Hour Grid</h3>
+<template name="adminTutorHours">
+    
+    <br>
     
     <div class="row">
         <div class="col s1s">Time</div>
@@ -15,9 +16,9 @@
         <div class="row">
         <div class="col s1s">09-10:00</div> 
         <div class="col s1s free" id="m0910">    &nbsp;</div>
-        <div class="col s1s free" id="t0910">    2&nbsp;</div>
-        <div class="col s1s free" id="w0910">    3&nbsp;</div>
-        <div class="col s1s free" id="th0910">    4&nbsp;</div>
+        <div class="col s1s free" id="t0910">    &nbsp;</div>
+        <div class="col s1s free" id="w0910">    &nbsp;</div>
+        <div class="col s1s free" id="th0910">   &nbsp;</div>
         <div class="col s1s free" id="f0910">    &nbsp;</div>
         <div class="col disable">&nbsp;</div>
         <div class="col disable">&nbsp;</div>
@@ -126,8 +127,9 @@
         <div class="col disable">&nbsp;    </div>
         <div class="col disable">&nbsp;    </div>
     </div>
-    <p>
-        {{showNumberofSellection}}</p>
+    <p style="font-size:16px; margin-left:40%">
+            {{showNumberofSellection}}
+    </p>
     <!--
      <div class="row">
         <div class="col s1s">07-08:00</div>
@@ -140,5 +142,9 @@
         <div class="col s1s disable">    </div>
     </div>
     -->
-
+    
+        <div class="centered" style="margin-left:36%">
+            <a class="waves-effect waves-light btn">Submit</a>
+            <a class="waves-effect waves-light btn" style="margin-left:2%" href="{{pathFor 'adminPromoteStudent'}}">Cancel</a>
+        </div>
 </template>

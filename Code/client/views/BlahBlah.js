@@ -29,6 +29,6 @@ Template.BlahBlah.helpers({
     },
     
     'loadBlahs': function() {
-        return displayAllBlahBlahs();
+        return Meteor.call('displayAllBlahBlahs');
     }
 });
