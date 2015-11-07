@@ -27,6 +27,7 @@ Router.route('/adminPromoteStudent');
 Router.route('/adminTutorCourse');
 Router.route('/adminTutorHours');
 Router.route('/adminModifySchedule');
+Router.route('/adminSchedule');
 
 // Test Route
 Router.route('/BlahBlah');

@@ -14,5 +14,5 @@ Meteor.publish("catalogs", function() {
 });
 
 Meteor.publish('allUserData', function() {
-    return Meteor.users.find({}, {fields: {'roles': 1}});
+    return Meteor.users.find({}, {fields: {'roles': 1, 'emails': 1}});
 });

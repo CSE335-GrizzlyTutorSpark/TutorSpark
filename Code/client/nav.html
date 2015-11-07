@@ -15,8 +15,10 @@
 <ul id="slide-out" class="side-nav" style="width:240px"> 
     <img src="imgs/ou-logo.jpg" alt="ou">
         <br><br>
+    {{#if currentUser}}
     <li><a class="waves-effect waves-light btn" href="{{pathFor 'home'}}">HOME</a></li>
         <br>
+    {{/if}}
     
     <!-- Created for testing
             <li><a href="{{pathFor 'BlahBlah'}}">BLAH BLAH TEST</a></li>
@@ -31,9 +33,9 @@
     
     <!-- Tutor Buttons -->
     {{#if isInRole 'tutor'}}
-        <li><a class="waves-effect waves-light btn" href="{{pathFor 'tutorCourses'}}">MY COURSES</a></li>
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminTutorCourse'}}">MY COURSES</a></li>
             <br>
-        <li><a class="waves-effect waves-light btn" href="{{pathFor 'tutorAvailability'}}">MY AVAILABILITY</a></li>
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminTutorHours'}}">MY AVAILABILITY</a></li>
     {{/if}}
     
     <!-- Admin Buttons -->

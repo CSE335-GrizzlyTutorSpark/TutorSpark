@@ -88,7 +88,7 @@ Template.AdminSchedule.helpers({
 //Session.setDefault('editting_calevent', null);
 //Session.setDefault('showEditEvent', false);
 
-Template.AdminSchedule.rendered= function(){
+Template.AdminSchedule.rendered = function(){
     var calendar= $('#calendar').fullCalendar({
         dayClick:function( date,allDay, jsEvent, view ){
             var calendarEvent={};
