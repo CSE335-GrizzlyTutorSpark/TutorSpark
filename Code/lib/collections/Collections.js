@@ -45,3 +45,6 @@ Availability = new Mongo.Collection('availabilities');
     // day7-8: [true/false]
     // [...]
     // day7-18: [true/false]
+
+CalEvent = new Mongo.Collection('calevent');
+// Collection used by the FullCalendar package

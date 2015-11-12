@@ -1,27 +1,10 @@
 <template name="studentSchedule">
      
-    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
-    <script src='lib/jquery.min.js'></script>
-    <script src='lib/moment.min.js'></script>
-    <script src='fullcalendar/fullcalendar.js'></script>
+    {{> dialog}}
     
-    <h1 class="center">Use the drop-down menus to sort the calendar events below by department and
-                       then by course, and click on a day you would like to schedule a tutoring session</h1>
-  
-    {{> ReactiveFullcalendar options=calendarOptions }}
+    <div class="container">
+        <div id="calendar">
+        </div>
+    </div>
     
-    
-    
-    <!--- 
-        Navigation not needed here  
-    
-<a href="{{pathFor 'private'}}" class="waves-effect waves-teal btn-flat">Back</a>
-
-<button class="btn waves-effect waves-light" type="submit" id="subjectsubmit" name="action">
-
-Next  
- materialize icon    
-
-    </button>
--->    
 </template>

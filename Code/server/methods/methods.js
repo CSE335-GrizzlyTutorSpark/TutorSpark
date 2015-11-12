@@ -18,18 +18,6 @@ Meteor.methods({
         return BlahBlah.find();
     },
     
-    ///////////////////////////////////
-    // Target User - related methods //
-    ///////////////////////////////////
-    
-    'setTargetUser': function(ID) {
-        currentTargetUser = ID;
-    },
-    
-    'getTargetUser': function() {
-        return currentTargetUser;
-    },
-    
     ////////////////////////////////////
     // Availability - related methods //
     ////////////////////////////////////
