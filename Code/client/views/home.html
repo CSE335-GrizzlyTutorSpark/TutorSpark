@@ -1,0 +1,104 @@
+<template name="home">
+    
+    <!-- before you log in, the following
+         elements will be displayed -->
+    
+    <!--
+    {{#if !currentUser}}
+        Hey, you need to login.
+    {{/if}}
+    -->
+    
+    <!-- if the user logs in as a Student,
+         the elements below will be displayed -->
+    
+    {{#if isInRole 'student'}}
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">As a student user, you'll be able to select courses you're interested in receiving some<br>
+                           tutoring for, schedule tutoring sessions, and review your upcoming scheduled sessions</h1>
+        <table style="margin-left:25%">
+            <thead>
+                <tr>
+                    <th>
+                        Step 1: Select Courses
+                    </th>
+                    <th>
+                        Step 2: Find a Tutor
+                    </th>
+                    <th>
+                        Step 3: View Your Schedule
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            Open the sidebar menu, and select "My Courses" to select the subjects you need tutoring for
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Once you've chosen some courses, select the "Find A Tutor" page to schedule your first session
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Once you've scheduled a tutoring session, you can select the "My Schedule" page to review your meetings
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {{/if}}
+    
+    <!-- If the user logs in as a Tutor,
+         the elements below will be displayed -->
+    
+    {{#if isInRole 'tutor'}}
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">As a tutor user, you'll be able to select courses that you are capable of tutoring for,<br>
+                           along with the times you are available to tutor. Once a student has scheduled a session<br>
+                           with you, you will be able to review your scheduled meetings in a personal calendar.</h1>
+        <table class="centered" style="margin-left:25%">
+            <thead>
+                <tr>
+                    <th>
+                        Step 1: Enter your Courses
+                    </th>
+                    <th>
+                        Step 2: Enter your Availability
+                    </th>
+                    <th>
+                        Step 3: View Your Schedule
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Open the sidebar menu, and select "My Courses" to choose courses that you are able to tutor students in</p>
+                    </td>
+                    <td>
+                        <p>
+                            Once you've chosen some courses, open the sidebar and select the "My Availability" link to choose times you are available to teach
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            When a student schedules a session with you, you will receive an email notification and will be able to view the meeting in the "My Schedule" page
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {{/if}}
+    
+    <!-- if a user logs in as an admin,
+         we should navigate them to the dashboard -->
+    {{#if isInRole 'admin'}}
+        <!-- placeholder for dashboard auto-navigation -->
+        <h1 class="center">Welcome to Grizzly TutorSpark!</h1>
+        <h1 class="center">Use the sidebar to navigate to the Admin Dashboard</h1>
+    {{/if}}
+</template>

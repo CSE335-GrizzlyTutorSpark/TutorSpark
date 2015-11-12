@@ -1,0 +1,33 @@
+<template name='adminPromoteStudent'>
+    <br>
+    <div style="background:#F0F0F0">
+        <table class="bordered" style="margin-left:28%">
+            <thead>
+                <tr>
+                    <th data-field="id">Name</th>
+                    <th data-field="email">Email</th>
+                    <th data-field="promote">Promote Button</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each studentsToPromote}}
+                    <tr>
+                        <td>
+                            {{profile.name}}
+                        </td>
+                        <td>    
+                            {{emails.[0].address}}
+                        </td>
+                        <td>
+                            <!-- The code below set's the id of each button equal to the user's Mongo ID -->
+                            <a id="{{_id}}" class="waves-effect waves-light btn" href="{{pathFor 'adminTutorCourse'}}">
+                                PROMOTE TO TUTOR
+                            </a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <br>
+    </div>
+</template>

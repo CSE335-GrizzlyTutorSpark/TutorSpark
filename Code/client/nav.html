@@ -1,0 +1,52 @@
+<template name="nav">
+    <nav class="top-nav">
+        <div class="container">
+        <div class="nav-wrapper"> 
+              <img src="imgs/OU.jpeg"> <a class="page-title"> Grizzly TutorSpark </a> 
+            </div>
+        </div> 
+    </nav>
+    
+      
+   <a class="button-collapse block" data-activates="slide-out" href="#">
+       <i class="mdi-navigation-menu"></i>
+          </a>
+ 
+<ul id="slide-out" class="side-nav" style="width:240px"> 
+    <img src="imgs/ou-logo.jpg" alt="ou">
+        <br><br>
+    {{#if currentUser}}
+    <li><a class="waves-effect waves-light btn" href="{{pathFor 'home'}}">HOME</a></li>
+        <br>
+    {{/if}}
+    
+    <!-- Created for testing
+            <li><a href="{{pathFor 'BlahBlah'}}">BLAH BLAH TEST</a></li>
+    -->
+
+    <!-- Student Buttons -->
+    {{#if isInRole 'student'}}
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'studentSchedule'}}">MY SCHEDULE</a></li>
+            <br>
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'studentFindTutor'}}">FIND A TUTOR</a></li>
+    {{/if}}
+    
+    <!-- Tutor Buttons -->
+    {{#if isInRole 'tutor'}}
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminTutorCourse'}}">MY COURSES</a></li>
+            <br>
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminTutorHours'}}">MY AVAILABILITY</a></li>
+    {{/if}}
+    
+    <!-- Admin Buttons -->
+    {{#if isInRole 'admin'}}
+        <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminDashboard'}}">ADMIN DASHBOARD</a></li>
+    {{/if}}
+    
+    <!-- Sign-in/out Button -->
+        <br>
+    <li>{{> atNavButton }}</li>
+    
+</ul>
+   
+</template>

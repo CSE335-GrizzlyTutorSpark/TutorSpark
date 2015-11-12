@@ -1,0 +1,29 @@
+<template name="adminTutorCourse">
+    <h1 class="center" style="font-size:24px">Select Tutor's Course Aptitudes</h1>
+    
+    <!--- List with checkbox design -->
+    <!--- make a csss class for the following item in the long run 
+        Make sure they have enough space from each other to prevent any misclick-trigger events-->
+    
+    {{#each deptList}}
+        <div style="float:left; width:10%">
+            <div style="float:left; width:10%">
+                <form action="#">
+                    <ul>
+                        <li style="align:center">
+                            {{deptName}}
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    {{/each}}
+    
+    <div class="centered" style="margin-left:40%; clear:left;">
+        <br>
+        <!-- Submit button also needs to call a function to update the tutor's courses -->
+        <a class="waves-effect waves-light btn" href="{{pathFor 'adminTutorHours'}}" id="courseSubmit">Submit</a>
+        <a class="waves-effect waves-light btn" style="margin-left:2%" href="{{pathFor 'adminPromoteStudent'}}">Cancel</a>
+    </div>
+    
+</template>

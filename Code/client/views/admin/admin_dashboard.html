@@ -1,0 +1,62 @@
+<template name="adminDashboard">
+    <div>
+        <br>
+        <table class="centered" style="margin-left:25%">
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminPromoteStudent'}}">Promote Student > Tutor</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a class="waves-effect waves-light btn" href="{{pathFor 'adminModifySchedule'}}">Modify Global Schedule</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a class="waves-effect waves-light btn" href="{{pathFor 'home'}}">Add Department</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a class="waves-effect waves-light btn" href="{{pathFor 'home'}}">Add Course</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <!--
+        <table class="centered">
+        <thead>
+          <tr>
+              <th data-field="id">Name</th>
+              <th data-field="name">Item Name</th>
+              <th data-field="price">Item Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+          </tr>
+        </tbody>
+      </table>
+    -->
+    </div>
+</template>
